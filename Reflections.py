@@ -65,10 +65,10 @@ plt.axis("off")
 
 
 
-# this is just a dummy function - doesn't matter which function you actually use
+# this is just a dummy function - doesn't matter which function you actually use - ACTUALLY NOT
 def f(x,y):
-    fxy = x*x+y*y
-    fxy = np.imag(1.0/(fxy-1j*eta))
+    fxy = (x*x+y*y)
+    fxy = np.imag(1.0/(fxy-1j*eta))   #end animation changes if you (1) multiply with an overall factor e.g. *0.1 or (2) put a new value of eta by hand eg. 100.0
     return fxy
 
 
